@@ -27,3 +27,14 @@
 *.exe
 *.out
 *.app
+
+# Solution files
+*.db
+*.opendb
+*.suo
+
+# Project-specific folders
+3rdParty
+Bin
+Obj
+Test
