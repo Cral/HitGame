@@ -2,6 +2,8 @@
 
 #include <SFML/Graphics.hpp>
 
+class Entity;
+
 class GameState
 {
 public:
@@ -12,6 +14,5 @@ public:
 	void Draw(sf::RenderWindow& window);
 
 private:
-	sf::Texture texture;
-	sf::Sprite sprite;
+	Entity* PlayerEntity;
 };
