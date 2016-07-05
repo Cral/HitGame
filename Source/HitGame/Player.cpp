@@ -1,4 +1,7 @@
+#include <SFML/Graphics.hpp>
+
 #include "Player.h"
+#include "SpriteComponent.h"
 
 Player::Player() 
 	: Entity("../../Content/box.png")
@@ -41,6 +44,6 @@ void Player::Tick(float DeltaSeconds)
 		Move.x = Move.x / Length;
 		Move.y = Move.y / Length;
 
-		sprite.move(Move * 100.0f * DeltaSeconds);
+		Sprite->GetSprite().move(Move * 100.0f * DeltaSeconds);
 	}
 }

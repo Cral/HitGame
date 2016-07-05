@@ -15,4 +15,5 @@ public:
 
 private:
 	Entity* PlayerEntity;
+	Entity* TestEntity;
 };

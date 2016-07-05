@@ -1,6 +1,8 @@
 #pragma once
 
-#include <SFML/Graphics.hpp>
+#include <windows.h>
+
+class SpriteComponent;
 
 class Entity
 {
@@ -10,9 +12,8 @@ public:
 
 	virtual void Tick(float DeltaSeconds);
 
-	sf::Sprite& GetSprite() { return sprite; }
+	SpriteComponent* GetSpriteComponent() { return Sprite; }
 
 protected:
-	sf::Texture texture;
-	sf::Sprite sprite;
+	SpriteComponent* Sprite;
 };

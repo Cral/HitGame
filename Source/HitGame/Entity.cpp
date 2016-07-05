@@ -1,11 +1,11 @@
 #include <SFML/Window.hpp>
 
 #include "Entity.h"
+#include "SpriteComponent.h"
 
 Entity::Entity(const std::string& textureFile)
 {
-	texture.loadFromFile(textureFile);
-	sprite.setTexture(texture);
+	Sprite = new SpriteComponent(textureFile);
 }
 
 Entity::~Entity()
